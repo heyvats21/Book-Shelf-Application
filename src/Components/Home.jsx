@@ -11,14 +11,10 @@ export default function Home() {
       <div>
         <h2>Currently Reading</h2>
         <div style={{ display: "flex", flexWrap: "wrap", marginLeft: "80px" }}>
-            {
-                bookData.filter((item)=>item.shelf==="Currently Reading").map((elem)=>(
-                    <CardComponent category={elem} />
-                ))
-            }
-          {/* {bookData.map((item) => (
+            
+          {bookData.map((item) => (
             <CardComponent category={item} />
-          ))} */}
+          ))}
         </div>
         <hr />
         <div>
